@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.github.browep.lfcp"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:label="@string/app_name" >
+        <activity android:name="Main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider android:name="com.github.browep.lfcp.LocalFileContentProvider"
+                  android:authorities="com.github.browep.lfcp"
+                />
+    </application>
+</manifest> 
